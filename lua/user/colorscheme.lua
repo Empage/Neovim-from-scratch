@@ -1,8 +1,8 @@
 vim.cmd [[
 try
-  colorscheme darkplus
+  colorscheme zellner
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
-  set background=dark
+  -- set background=dark
 endtry
 ]]
