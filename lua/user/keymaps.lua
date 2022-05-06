@@ -39,6 +39,23 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
+-- MPH custom
+--- number of occurences of the word under curser
+keymap("n", "<leader>*", "*<C-O>:%s///gn<CR>", opts)
+-- toggle line wrapping
+keymap("n", "<F6>", ":set wrap!<CR>", opts)
+-- TODO continue
+-- Shortcut for compiling my makefiles with tmp targets
+-- keymap("n", "<leader>m", ":set wrap!<CR>", opts)
+-- map ,m :w<CR> :! make tmp<CR>
+-- " Shortcut for compiling my makefiles with tmp targets
+-- map <leader>m :w<CR> :make tmp<CR>
+-- " Shortcut for compiling my makefiles with tmp targets
+-- map ,k :w<CR> :! make tmp2<CR>
+-- " toggle scrollbind
+-- map ,s :set scrollbind!<CR>
+
+
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
@@ -51,6 +68,7 @@ keymap("v", ">", ">gv", opts)
 -- Move text up and down
 keymap("v", "<A-j>", ":m .+1<CR>==", opts)
 keymap("v", "<A-k>", ":m .-2<CR>==", opts)
+-- visual paste through blackhole register to keep yanked text
 keymap("v", "p", '"_dP', opts)
 
 -- Visual Block --

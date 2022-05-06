@@ -1,5 +1,10 @@
 local fn = vim.fn
 
+-- potential new plugins from my old configuration
+-- - surround.vim
+-- - vim-repeat
+-- - vim-snippets
+-- Plugin 'mzlogin/vim-markdown-toc'
 -- Automatically install packer
 local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
 if fn.empty(fn.glob(install_path)) > 0 then
